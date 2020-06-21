@@ -8,42 +8,20 @@ export default class HomeComponent extends Vue {
     }
     items: object[] = [
         {
-            title: 'Недостатнє охолодження',
-            text:'1. Витік холодоагенту з холодильної системи.\n' +
-                '2. Засмічені пластини повітряного конденсатора.\n' +
-                '3. Погана циркуляція повітря.\n' +
-                '4. Неправильні налаштування термостата.\n' +
-                'Вжити заходи:\n' +
-                '1. Відключити холодильну шафу. Викликати техніка сервісної служби для діагностики витоку і ремонту.\n' +
-                '2. Відключити холодильну шафу. Прочистити пластини повітряного конденсатора.\n' +
-                '3. Звільнити простір навколо холодильної шафи для вільної циркуляції повітря\n' +
-                '4. Викликати техніка сервісної служби для зміни налаштувань термостата.'
+            title: 'What You Do One',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
         },
         {
-            title: 'Компресор працює не відключаючись. Продукт всередині шафи замерзає.',
-            text: '1. Неправильні налаштування термостата.\n' +
-                'Вжити заходи:\n' +
-                '1. Відключити холодильну шафу від мережі живлення. Викликати техніка сервісної служби для переустановлення налаштувань термостата.'
+            title: 'What You Do Two',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
         },
         {
-            title: 'Компресор не працює, вентилятор конденсатора працює.',
-            text: 'Можливі причини:\n' +
-                '\n' +
-                '1. Пусковий реле компресора вийшло з ладу.\n' +
-                '2. Компресор вийшов з ладу.\n' +
-                'Вживані заходи:\n' +
-                '1. Викликати техніка сервісної служби для проведення ремонтних робіт..'
+            title: 'What You Do Three',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
         },
         {
-            title: '\n' +
-                'Шум при роботі холодильної шафи. Шум при роботі компресора. Шум при роботі вентилятора.',
-            text: 'Можливі причини:\n' +
-                '1. Деякі частини холодильного агрегату стикаються з корпусом холодильної шафи.\n' +
-                '2. Сторонні шуми в компресорі.\n' +
-                '3. Порушено фіксація мотора вентилятора або його лопатей.\n' +
-                '4. Лопаті вентилятора стикаються з повітряним конденсатором.\n' +
-                'Вживані заходи:\n' +
-                '1. Викликати техніка сервісної служби для проведення ремонтних робіт..'
+            title: 'What You Do Four',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
         },
     ];
     panel: boolean[] = [ true, false, false, false ];

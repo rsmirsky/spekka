@@ -1,13 +1,13 @@
 <template>
    <v-layout column>
       <v-flex xs12>
-         <v-img :src="require('@/assets/spekka-main.jpg')" class="header-image">
+         <v-img :src="require('@/assets/photo3.jpg')" class="header-image">
             <v-layout column text-xs-right justify-end fill-height class="header-padding">
                <span class="header-sub-text">
-                  Професійний досвід більше 10 років!
+                  Business Name
                </span>
                <h1 class="header-text primary--text">
-                  Сервіс низьких цін №1
+                  Business One Liner
                </h1>
             </v-layout>
          </v-img>
@@ -15,31 +15,12 @@
       <v-container fluid class="content-container">
          <v-layout row wrap justify-space-between>
             <v-flex ref="whoBox" md8 xs12 mb-4>
-               <h2 class="content-title primary--text mb-4"><h6>СПЕККА - європейський сервіс холодильного обладнання в Україні.
-                     Помірні ціни, гарантія та швидкість з якою ми реагуємо,
-                     дозволять зберегти вас від зайвого хвилювання,
-                     а продукти від псування. </h6></h2>
-               <ul>
-                  <li>Холодильне обладнання</li>
-                  <li>Торгове обладнання</li>
-                  <li>Промислове обладнання</li>
-                  <li>Комерційне обладнання</li>
-                  <li>Устаткування HoReCa</li>
-               </ul>
-               <br>
-               <p>
-                  ГАРАНТІЇ<br>
-                  Наша компанія надає безпрецедентні гарантії на всі види ремонтних робіт - до двох років. Це стало можливим завдяки точної діагностики та професійному підходу до ремонту.
-               </p>
-               <p>
-                  НИЗЬКІ ЦІНИ<br>
-                  Оптимальне співвідношення «ціна-якість» - запорука ефективної роботи «СПЕККА» і успіху наших клієнтів. Доступні ціни обумовлені високим професіоналізмом і оперативністю виконання робіт. </p>
-               <p>
-                  ЯКІСТЬ<br>
-                  Запорука високої якості ремонту криється у високій кваліфікації фахівців, великому досвіді,
-                  сучасної технічної бази і використанні оригінальних комплектуючих.</p>
+               <h2 class="content-title primary--text mb-4">Who We Are</h2>
+               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+               <p> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
+               <p> Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
                <v-layout justify-center>
-                  <v-btn flat color="primary" to="/biography">заощаджуй з абонементом</v-btn>
+                  <v-btn flat color="primary" to="/biography">Biography</v-btn>
                </v-layout>
             </v-flex>
             <v-flex xs3 ml-3 v-if="$vuetify.breakpoint.mdAndUp" mt-4 mb-4>
@@ -53,7 +34,7 @@
                </v-layout>
             </v-flex>
             <v-flex md8 xs12 mb-4>
-               <h2 class="content-title primary--text mb-4 mt-4">Основні причини несправності холодильника</h2>
+               <h2 class="content-title primary--text mb-4 mt-4">What We Do</h2>
                <v-expansion-panel v-model="panel" expand popout>
                   <v-expansion-panel-content v-for="(item,i) in items" :key="i" v-bind:style="{'background-color': getBackground(i)}">
                      <template v-slot:header>
@@ -93,18 +74,18 @@
                <v-divider></v-divider>
             </v-flex>
             <v-flex md8 xs12>
-               <h2 class="content-title primary--text mb-4">Зв'яжіться з нами</h2>
-               <h2 class="primary--text title font-weight-light text-uppercase mb-3">надіслати повідомлення</h2>
+               <h2 class="content-title primary--text mb-4">Contact Us</h2>
+               <h2 class="primary--text title font-weight-light text-uppercase mb-3">Send me a message</h2>
                <v-form ref="form" lazy-validation>
-                  <v-text-field v-model="name" label="ім'я" box required></v-text-field>
-                  <v-text-field v-model="email" label="Пошта(Email)" box required></v-text-field>
-                  <v-text-field v-model="subject" label="Тема" box required></v-text-field>
-                  <v-text-field v-model="message" label="Текст повідомлення" height="200px" box required></v-text-field>
+                  <v-text-field v-model="name" label="Name" box required></v-text-field>
+                  <v-text-field v-model="email" label="Email" box required></v-text-field>
+                  <v-text-field v-model="subject" label="Subject" box required></v-text-field>
+                  <v-text-field v-model="message" label="Message" height="200px" box required></v-text-field>
                   <v-layout v-if="$vuetify.breakpoint.mdAndUp" justify-end>
-                     <v-btn raised color="primary" class="ma-0">надіслати</v-btn>
+                     <v-btn raised color="primary" class="ma-0">Contact Me</v-btn>
                   </v-layout>
                   <v-layout v-else justify-center>
-                     <v-btn raised color="primary" >надіслати</v-btn>
+                     <v-btn raised color="primary" >Contact Me</v-btn>
                   </v-layout>
                </v-form>
             </v-flex>
@@ -133,7 +114,7 @@
                               Email
                            </v-list-tile-title>
                            <v-list-tile-sub-title>
-                              spekka@ukr.net
+                              email@address.com
                            </v-list-tile-sub-title>
                         </v-list-tile-content>
                      </v-list-tile>
