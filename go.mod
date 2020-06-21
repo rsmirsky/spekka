@@ -1,4 +1,4 @@
-module github.com/seephp/spekka/back
+module github.com/seephp/spekka
 
 go 1.14
 
