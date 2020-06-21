@@ -1,1 +1,1 @@
-web: ./bin/back
+backend: ./bin/back
