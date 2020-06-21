@@ -1,6 +1,9 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/boltegg/env"
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
 	router := gin.Default()
@@ -12,5 +15,8 @@ func main() {
 	router.Static("/img", "./front/dist/img")
 
 	// Listen and serve on 0.0.0.0:8080
-	router.Run(":1323")
+
+	port := env.Get("PORT").Default("8080").String()
+
+	router.Run(":%s", port)
 }
