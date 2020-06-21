@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/boltegg/env"
 	"github.com/gin-gonic/gin"
 )
@@ -18,5 +20,5 @@ func main() {
 
 	port := env.Get("PORT").Default("8080").String()
 
-	router.Run(":%s", port)
+	router.Run(fmt.Sprintf(":%s", port))
 }
