@@ -6,9 +6,9 @@ export default class AppComponent extends Vue {
   bottomNav: string = 'home';
 
   menuItems: MenuItem[] = [
-    new MenuItem('Home','home', '/'),
-    new MenuItem('Services','pages', '/services'),
-    new MenuItem('Biography','person', '/biography'),
-    new MenuItem('Blog','portrait', '/blog')
+    new MenuItem('Головна','home', '/'),
+    new MenuItem('Абонементи','pages', '/services'),
+    new MenuItem('Ціни','person', '/biography'),
+    new MenuItem('Блог','portrait', '/blog')
   ]
 }
