@@ -3,20 +3,20 @@
     <v-flex xs12>
       <v-img :src="require('@/assets/photo5.jpg')" height="100vh">
         <v-layout column text-xs-right justify-end fill-height class="header-padding">
-          <h1 class="header-text primary--text">Services</h1>
+          <h1 class="header-text primary--text">Абонементи</h1>
         </v-layout>
       </v-img>
     </v-flex>
     <v-container fluid class="content-container">
       <v-layout row wrap justify-space-between>
         <v-flex xs12>
-          <h2 class="content-title primary--text mb-4">Our Services</h2>
+          <h2 class="content-title primary--text mb-4">Обирайте кращі умови для свого бізнесу</h2>
         </v-flex>
         <v-flex md5 xs12 v-for="(service, i) in services" :key="i" pb-4>
           <v-card>
             <v-img :src="require('@/assets/' + service.image)" height="400"></v-img>
             <v-card-title class="headline primary--text">{{service.title}}</v-card-title>
-            <v-card-text>{{service.text}}</v-card-text>
+            <v-card-text style="white-space: pre;">{{service.text}}</v-card-text>
             <v-card-actions>
               <v-layout justify-space-between pa-3>
                 <span class="primary--text subheading font-weight-medium">{{service.length}}</span>
@@ -26,12 +26,12 @@
           </v-card>
         </v-flex>
         <v-flex xs12 mt-4>
-          <h2 class="content-title primary--text mb-4">Purchase</h2>
+          <h2 class="content-title primary--text mb-4">Бронювання</h2>
         </v-flex>
         <v-flex md5 xs12 mb-4>
           <h2
             class="primary--text title font-weight-light text-uppercase mb-3"
-          >Select a service to book</h2>
+          >оберіть кращий для Вас час початку дії абонементу</h2>
           <v-form ref="form" lazy-validation>
             <v-select v-model="service" :items="services" item-text="title" label="Service" box required></v-select>
             <v-text-field v-model="name" label="Name" box required></v-text-field>
@@ -58,12 +58,12 @@
             </v-dialog>
             <v-text-field v-model="message" label="Message" height="200px" box required></v-text-field>
             <v-layout justify-center>
-              <v-btn raised color="primary" class="ma-0" v-on:click="send()">Book</v-btn>
+              <v-btn raised color="primary" class="ma-0" v-on:click="send()">надіслати</v-btn>
             </v-layout>
           </v-form>
         </v-flex>
         <v-flex lg5 xs12>
-          <h2 class="primary--text title font-weight-light text-uppercase mb-3">Calender</h2>
+          <h2 class="primary--text title font-weight-light text-uppercase mb-3">Календар</h2>
             <v-calendar color="primary" :value="nowString" style="height: 620px;">
             <template v-slot:day="{ date }">
                <v-card v-for="(event, i) in eventsMap[date]" :key="i" color="primary">
@@ -78,10 +78,10 @@
                 <v-icon dark left>
                   keyboard_arrow_left
                 </v-icon>
-                Prev
+                Назад
               </v-btn>
               <v-btn @click="next()" color="primary">
-                Next
+                Далі
                 <v-icon dark right>
                   keyboard_arrow_right
                 </v-icon>
@@ -90,7 +90,7 @@
         </v-flex>
       </v-layout>
       <v-layout justify-center>
-        <v-btn flat color="primary" to="/">Home</v-btn>
+        <v-btn flat color="primary" to="/">на головну сторінку</v-btn>
       </v-layout>
     </v-container>
   </v-layout>

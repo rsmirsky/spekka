@@ -1,10 +1,10 @@
 <template>
    <v-layout column>
       <v-flex xs12>
-         <v-img :src="require('@/assets/photo1.jpg')" class="header-image">
+         <v-img :src="require('@/assets/photo1.png')" class="header-image">
             <v-layout column text-xs-right justify-end fill-height class="header-padding">
                <h1 class="header-text primary--text">
-                  Biography
+                  Ціни
                </h1>
             </v-layout>
          </v-img>
@@ -26,11 +26,11 @@
                <p>&nbsp; &nbsp; &nbsp; &nbsp; Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
                <p>&nbsp; &nbsp; &nbsp; &nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                <v-layout justify-center>
-                  <v-btn flat color="primary" to="/blog">Blog</v-btn>
+                  <v-btn flat color="primary" to="/blog">Договір та акти</v-btn>
                </v-layout>
             </v-flex>
             <v-flex xs12 mb-4>
-               <h2 class="content-title primary--text mb-4">My Journey</h2>
+               <h2 class="content-title primary--text mb-4">Температурна пам'ятка</h2>
                <v-timeline :dense="useDense()">
                   <v-timeline-item v-for="(event, i) in events" :key="`event-${i}`" color="primary" large>
                      <template v-slot:opposite>
@@ -42,7 +42,7 @@
                         <v-card-title class="headline primary--text">
                            {{event.title}}
                         </v-card-title>
-                        <v-card-text>
+                        <v-card-text style="white-space: pre;">
                            {{event.text}}
                         </v-card-text>
                      </v-card>
@@ -70,7 +70,7 @@
             </v-flex>
          </v-layout>
          <v-layout justify-center mb-5>
-            <v-btn flat color="primary" to="/">Home</v-btn>
+            <v-btn flat color="primary" to="/">на головну сторінку</v-btn>
          </v-layout>
       </v-container>
    </v-layout>

@@ -9,6 +9,6 @@ export default class AppComponent extends Vue {
     new MenuItem('Головна','home', '/'),
     new MenuItem('Абонементи','pages', '/services'),
     new MenuItem('Ціни','person', '/biography'),
-    new MenuItem('Блог','portrait', '/blog')
+    new MenuItem('Про нас','portrait', '/blog')
   ]
 }

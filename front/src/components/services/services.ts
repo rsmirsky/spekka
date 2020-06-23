@@ -19,32 +19,65 @@ export default class ServiceComponent extends Vue {
   timemodal: boolean = false;
   services: object[] = [
     {
-      title: 'Service One',
+      title: 'На місяць',
       image: 'service1.jpg',
-      price: '£30',
-      length: '30 mins',
-      text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.'
+      price: '370 грн.',
+      length: 'ціна за одну одиницю холодильної техніки(у місяць)',
+      text: 'Безкоштовно:\n' +
+          '- заправка фреоном (робота);\n' +
+          '- чистка конденсатора;\n' +
+          '- обслуговування електричної частини;\n' +
+          '- заміна вентилятора(робота);\n' +
+          '- пошук та усунення витоку холодильного агенту;\n' +
+          '- ремонт дренажної системи;\n' +
+          '- примусова відтайка снігової шуби;\n' +
+          '- заміна компресора(робота);'
+
     },
     {
-      title: 'Service Two',
+      title: 'На три місяці',
       image: 'service2.jpg',
-      price: '£50',
-      length: '1 hour',
-      text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.'
+      price: '350',
+      length: 'ціна за одну одиницю холодильної техніки(у місяць)',
+      text: 'Безкоштовно:\n' +
+          '- заправка фреоном (робота);\n' +
+          '- чистка конденсатора;\n' +
+          '- обслуговування електричної частини;\n' +
+          '- заміна вентилятора(робота);\n' +
+          '- пошук та усунення витоку холодильного агенту;\n' +
+          '- ремонт дренажної системи;\n' +
+          '- примусова відтайка снігової шуби;\n' +
+          '- заміна компресора(робота);'
     },
     {
-      title: 'Service Three',
+      title: 'На півроку',
       image: 'service3.jpg',
-      price: '£100',
-      length: '1.5 hours',
-      text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.'
+      price: '320 грн.',
+      length: 'ціна за одну одиницю холодильної техніки(у місяць)',
+      text: 'Безкоштовно:\n' +
+          '- заправка фреоном (робота);\n' +
+          '- чистка конденсатора;\n' +
+          '- обслуговування електричної частини;\n' +
+          '- заміна вентилятора(робота);\n' +
+          '- пошук та усунення витоку холодильного агенту;\n' +
+          '- ремонт дренажної системи;\n' +
+          '- примусова відтайка снігової шуби;\n' +
+          '- заміна компресора(робота);'
     },
     {
-      title: 'Service Four',
+      title: 'На рік',
       image: 'service4.jpg',
-      price: '£125',
-      length: '2 hours',
-      text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.'
+      price: '290',
+      length: 'ціна за одну одиницю холодильної техніки(у місяць)',
+      text: 'Безкоштовно:\n' +
+          '- заправка фреоном (робота);\n' +
+          '- чистка конденсатора;\n' +
+          '- обслуговування електричної частини;\n' +
+          '- заміна вентилятора(робота);\n' +
+          '- пошук та усунення витоку холодильного агенту;\n' +
+          '- ремонт дренажної системи;\n' +
+          '- примусова відтайка снігової шуби;\n' +
+          '- заміна компресора(робота);'
     }
   ];
 
