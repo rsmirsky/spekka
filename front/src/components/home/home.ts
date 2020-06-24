@@ -75,44 +75,80 @@ export default class HomeComponent extends Vue {
             ],
             desserts: [
                 {
-                    name: 'Frozen Yogurt',
-                    calories: 159
+                    name: 'виклик сервіс-інженера (з урахуванням ремонту)',
+                    calories: '190 грн.'
                 },
                 {
-                    name: 'Ice cream sandwich',
-                    calories: 237
+                    name: 'виклик сервіс-інженера (тільки діагностика)',
+                    calories: '290 грн.'
                 },
                 {
-                    name: 'Eclair',
-                    calories: 262
+                    name: 'дозаправка холод. агента(фреону) Промислові',
+                    calories: 'від 590 грн.'
                 },
                 {
-                    name: 'Cupcake',
-                    calories: 305
+                    name: 'дозаправка холод. агента(фреону) Побутові',
+                    calories: 'від 350 грн.'
                 },
                 {
-                    name: 'Gingerbread',
-                    calories: 356
+                    name: 'чистка конденсатора від бруду, жиру, пуху ',
+                    calories: '375 грн./од'
                 },
                 {
-                    name: 'Jelly bean',
-                    calories: 375
+                    name: 'заміна вентилятора конденсатора',
+                    calories: '670 грн.'
                 },
                 {
-                    name: 'Lollipop',
-                    calories: 392
+                    name: 'пошук та усунення витоку фреону(пайка)',
+                    calories: '700 грн.'
                 },
                 {
-                    name: 'Honeycomb',
-                    calories: 408
+                    name: 'заміна контролера',
+                    calories: 'від 900 грн.'
                 },
                 {
-                    name: 'Donut',
-                    calories: 452
+                    name: 'заміна датчика температури',
+                    calories: '490 грн.'
                 },
                 {
-                    name: 'KitKat',
-                    calories: 518
+                    name: 'заміна лампи(довгі люмінесцентні)',
+                    calories: 'від 250 грн.'
+                },
+                {
+                    name: 'безпечна мийка холодильного обладнання ',
+                    calories: '420 грн./од.'
+                },
+                {
+                    name: 'повне технічне обслуговування кондиціонера',
+                    calories: '590 грн.'
+                },
+                {
+                    name: 'заміна ТЕН-а відтайки',
+                    calories: 'від 600 грн.'
+                },
+                {
+                    name: 'заміна капілярної трубки(+фільтр)',
+                    calories: 'від 920 грн.'
+                },
+                {
+                    name: 'заміна термо-регулюючого вентиля (ТРВ)',
+                    calories: 'від 700 грн.'
+                },
+                {
+                    name: 'вирівнювання ребер(ламелі) конденсатора',
+                    calories: '470 грн./од.'
+                },
+                {
+                    name: 'ізоляція труб (K-FLEX)',
+                    calories: '380 грн./м'
+                },
+                {
+                    name: 'установка заправного клапана (Шредер)',
+                    calories: '370 грн.'
+                },
+                {
+                    name: 'заміна компресора',
+                    calories: 'від 1800 грн.'
                 }
             ]
         }

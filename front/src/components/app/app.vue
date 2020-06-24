@@ -13,7 +13,7 @@
                </template>
                <v-list>
                   <v-list-tile>
-                     <v-btn flat icon>
+                     <v-btn href="https://www.facebook.com/remont.holodilnikov.kyiv/" flat icon>
                         <v-img :src="require('@/assets/facebook.svg')" contain height="24"></v-img>
                      </v-btn>
                   </v-list-tile>
@@ -40,17 +40,19 @@
       <v-toolbar flat fixed scroll-off-screen v-else class="white">
          <v-layout align-center justify-space-between>
             <v-toolbar-title class="primary--text">Spekka</v-toolbar-title>
+            <span style="color: #03A9F4">+38 063 059 46 96 | +38 066 058 19 41</span>
+            <span style="color: #03A9F4"> ПН-НД з 8.00 до 22.00</span>
             <v-toolbar-items>
                <v-btn flat color="primary" v-for="item in menuItems" :key="item.title" :to="item.path">{{item.title}}</v-btn>
             </v-toolbar-items>
             <div>
-               <v-btn flat icon>
+               <v-btn href="https://www.facebook.com/remont.holodilnikov.kyiv/" flat icon>
                   <v-img :src="require('@/assets/facebook.svg')" contain height="24"></v-img>
                </v-btn>
-               <v-btn flat icon>
+               <v-btn href="https://www.instagram.com/remont.holodilnikov.kyiv?r=nametag" flat icon>
                   <v-img :src="require('@/assets/instagram.svg')" contain height="24"></v-img>
                </v-btn>
-               <v-btn flat icon>
+               <v-btn href="https://www.linkedin.com/in/roman-smirsky-8b01a017b/" flat icon>
                   <v-img :src="require('@/assets/linkedin.svg')" contain height="24"></v-img>
                </v-btn>
             </div>
