@@ -37,7 +37,7 @@ export default class ServiceComponent extends Vue {
     {
       title: 'На три місяці',
       image: 'service2.jpg',
-      price: '350',
+      price: '350 грн.',
       length: 'ціна за одну одиницю холодильної техніки(у місяць)',
       text: 'Безкоштовно:\n' +
           '- заправка фреоном (робота);\n' +
@@ -67,7 +67,7 @@ export default class ServiceComponent extends Vue {
     {
       title: 'На рік',
       image: 'service4.jpg',
-      price: '290',
+      price: '290 грн.',
       length: 'ціна за одну одиницю холодильної техніки(у місяць)',
       text: 'Безкоштовно:\n' +
           '- заправка фреоном (робота);\n' +

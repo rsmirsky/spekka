@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '@/components/home/home.vue';
-import Services from '@/components/services/services.vue';
-import Biography from '@/components/biography/biography.vue';
-import Blog from '@/components/blog/blog.vue';
+import Services from '@/components/subscription/subscription.vue';
+import Biography from '@/components/prices/prices.vue';
+import Blog from '@/components/about/about.vue';
 
 Vue.use(Router);
 
@@ -17,17 +17,17 @@ export default new Router({
       component: Home
     },
     {
-      path: '/services',
+      path: '/subscription',
       name: 'services',
       component: Services
     },
     {
-      path: '/biography',
+      path: '/prices',
       name: 'biography',
       component: Biography
     },
     {
-      path: '/blog',
+      path: '/about',
       name: 'blog',
       component: Blog
     },

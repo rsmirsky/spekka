@@ -4,7 +4,7 @@
          <v-img :src="require('@/assets/spekka-main.png')" class="header-image">
             <v-layout column text-xs-right justify-end fill-height class="header-padding">
                <span class="header-sub-text">
-                  <!--Професійний досвід більше 10 років!-->
+                  холодильного обладнання
                </span>
                <h1 class="header-text primary--text">
                   Сервіс низьких цін №1

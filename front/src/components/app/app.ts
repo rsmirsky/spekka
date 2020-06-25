@@ -7,9 +7,9 @@ export default class AppComponent extends Vue {
 
   menuItems: MenuItem[] = [
     new MenuItem('Головна','home', '/'),
-    new MenuItem('Абонементи','pages', '/services'),
-    new MenuItem('Ціни','person', '/biography'),
-    new MenuItem('Про нас','portrait', '/blog')
+    new MenuItem('Абонементи','pages', '/subscription'),
+    new MenuItem('Ціни','person', '/prices'),
+    new MenuItem('Про нас','portrait', '/about')
   ]
 
   openFacebook () {
