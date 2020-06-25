@@ -40,7 +40,12 @@
       <v-toolbar flat fixed scroll-off-screen v-else class="white">
          <v-layout align-center justify-space-between>
             <v-toolbar-title class="primary--text">Spekka</v-toolbar-title>
-            <span style="color: #03A9F4">+38 063 059 46 96 | +38 066 058 19 41</span>
+            <span style="color: #03A9F4">
+
+              <a href="tel:+380630594696">(Lifecell) +38 063 059 46 96</a>&thinsp;&thinsp;
+                              <a href="tel:+380660581941">(Vodafone)+38 066 058 19 41</a>
+
+            </span>
             <span style="color: #03A9F4"> ПН-НД з 8.00 до 22.00</span>
             <v-toolbar-items>
                <v-btn flat color="primary" v-for="item in menuItems" :key="item.title" :to="item.path">{{item.title}}</v-btn>

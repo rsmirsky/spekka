@@ -1,7 +1,7 @@
 <template>
    <v-layout column>
       <v-flex xs12>
-         <v-img :src="require('@/assets/spekka-main.jpg')" class="header-image">
+         <v-img :src="require('@/assets/spekka-main.png')" class="header-image">
             <v-layout column text-xs-right justify-end fill-height class="header-padding">
                <span class="header-sub-text">
                   <!--Професійний досвід більше 10 років!-->
@@ -74,6 +74,8 @@
                      </v-card>
          </v-layout>
 
+
+
                   </v-expansion-panel-content>
                </v-expansion-panel>
                <v-layout justify-center>
@@ -129,7 +131,7 @@
                         </v-list-tile-avatar>
                         <v-list-tile-content>
                            <v-list-tile-title class="primary--text">
-                              Location
+                              Місце знаходження
                            </v-list-tile-title>
                            <v-list-tile-sub-title>
                               Київ, проспект Миру 6
@@ -142,7 +144,7 @@
                         </v-list-tile-avatar>
                         <v-list-tile-content>
                            <v-list-tile-title class="primary--text">
-                              Email
+                              Email(пошта)
                            </v-list-tile-title>
                            <v-list-tile-sub-title>
                               spekka@ukr.net
@@ -155,11 +157,14 @@
                         </v-list-tile-avatar>
                         <v-list-tile-content>
                            <v-list-tile-title class="primary--text">
-                              Telephone
+                              Телефон
                            </v-list-tile-title>
                            <v-list-tile-sub-title>
-                              +38 063 059 46 96 |
-                              +38 066 058 19 41
+                              <a href="tel:+380630594696">Зателефонувати +38 063 059 46 96</a>&thinsp;|&thinsp;
+                              <a href="tel:+380660581941">+38 066 058 19 41</a>.
+
+                              <!--+38 063 059 46 96 |
+                              +38 066 058 19 41-->
                            </v-list-tile-sub-title>
                         </v-list-tile-content>
                      </v-list-tile>
