@@ -51,19 +51,14 @@
                         {{event.date}}
                         </span>
                      </template>
-                     <v-layout
-                             v-scroll:#scroll-target="onScroll"
-
-                     >
                      <v-card class="elevation-2">
                         <v-card-title class="headline primary--text">
                            {{event.title}}
                         </v-card-title>
-                        <v-card-text style="white-space: pre;">
+                        <v-card-text style="white-space: pre-wrap;">
                            {{event.text}}
                         </v-card-text>
                      </v-card>
-                     </v-layout>
                   </v-timeline-item>
                </v-timeline>
             </v-flex>

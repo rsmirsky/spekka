@@ -64,15 +64,12 @@
                      <template v-slot:header>
                         <div>{{item.title}}</div>
                      </template>
-                     <v-layout
-                             v-scroll:#scroll-target="onScroll"
 
-                     >
 
                      <v-card>
-                        <v-card-text style="white-space: pre;">{{item.text}}</v-card-text>
+                        <v-card-text style="white-space: pre-wrap;">{{item.text}}</v-card-text>
                      </v-card>
-         </v-layout>
+
 
 
 
@@ -160,7 +157,7 @@
                               Телефон
                            </v-list-tile-title>
                            <v-list-tile-sub-title>
-                              <a href="tel:+380630594696">Зателефонувати +38 063 059 46 96</a>&thinsp;|&thinsp;
+                              <a href="tel:+380630594696">+38 063 059 46 96</a>&thinsp;|&thinsp;
                               <a href="tel:+380660581941">+38 066 058 19 41</a>.
 
                               <!--+38 063 059 46 96 |
