@@ -46,7 +46,7 @@
                <v-btn flat color="primary" v-for="item in menuItems" :key="item.title" :to="item.path">{{item.title}}</v-btn>
             </v-toolbar-items>
             <div>
-               <v-btn href="https://www.facebook.com/remont.holodilnikov.kyiv/" flat icon>
+               <v-btn href="https://www.facebook.com/remont.holodilnikov.kyiv/"  flat icon>
                   <v-img :src="require('@/assets/facebook.svg')" contain height="24"></v-img>
                </v-btn>
                <v-btn href="https://www.instagram.com/remont.holodilnikov.kyiv?r=nametag" flat icon>

@@ -11,4 +11,8 @@ export default class AppComponent extends Vue {
     new MenuItem('Ціни','person', '/biography'),
     new MenuItem('Про нас','portrait', '/blog')
   ]
+
+  openFacebook () {
+    window.open("https://www.facebook.com/remont.holodilnikov.kyiv/", "_blank");
+  }
 }

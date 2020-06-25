@@ -60,12 +60,20 @@
                <h2 class="content-title primary--text mb-4 mt-4">Основні причини несправності холодильника</h2>
                <v-expansion-panel v-model="panel" expand popout>
                   <v-expansion-panel-content v-for="(item,i) in items" :key="i" v-bind:style="{'background-color': getBackground(i)}">
+
                      <template v-slot:header>
                         <div>{{item.title}}</div>
                      </template>
+                     <v-layout
+                             v-scroll:#scroll-target="onScroll"
+
+                     >
+
                      <v-card>
                         <v-card-text style="white-space: pre;">{{item.text}}</v-card-text>
                      </v-card>
+         </v-layout>
+
                   </v-expansion-panel-content>
                </v-expansion-panel>
                <v-layout justify-center>
