@@ -3,19 +3,20 @@
         <v-flex xs12>
             <v-img :src="require('@/assets/spekka-main.png')" class="header-image">
                 <v-layout column text-xs-right justify-end fill-height class="header-padding">
-               <span class="header-sub-text">
-                  Сервіс низьких цін №1
-               </span>
-                    <h1 class="content-title primary--text mb-4">
-                        холодильного обладнання
+                    <h1 class="header-text primary--text">
+                        Сервіс низьких цін №1
                     </h1>
+                    <span class="header-sub-text">
+                  холодильного обладнання
+               </span>
                 </v-layout>
             </v-img>
         </v-flex>
         <v-container fluid class="content-container">
             <v-layout row wrap justify-space-between>
                 <v-flex ref="whoBox" md8 xs12 mb-4>
-                    <h2 class="content-title primary--text mb-4"><h6>СПЕККА - європейський сервіс холодильного обладнання в
+                    <h2 class="content-title primary--text mb-4"><h6>СПЕККА - європейський сервіс холодильного
+                        обладнання в
                         Україні.
                         Помірні ціни, гарантія та швидкість з якою ми реагуємо,
                         дозволять зберегти вас від зайвого хвилювання,
