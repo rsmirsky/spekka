@@ -16,7 +16,7 @@
           <v-card>
             <v-img :src="require('@/assets/' + service.image)" height="400"></v-img>
             <v-card-title class="headline primary--text">{{service.title}}</v-card-title>
-            <v-card-text style="white-space: pre;">{{service.text}}</v-card-text>
+            <v-card-text style="white-space: pre-wrap;">{{service.text}}</v-card-text>
             <v-card-actions>
               <v-layout justify-space-between pa-3>
                 <span class="primary--text subheading font-weight-medium">{{service.length}}</span>
