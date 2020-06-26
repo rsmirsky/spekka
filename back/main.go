@@ -36,10 +36,10 @@ func main() {
 
 func contactUs(c *gin.Context) {
 	var message struct {
-		Name  string `json:"name"`
-		Email string `json:"email"`
-		Phone string `json:"phone"`
-		Text  string `json:"text"`
+		Name    string `json:"name"`
+		Email   string `json:"email"`
+		Phone   string `json:"phone"`
+		Message string `json:"message"`
 	}
 
 	err := c.BindJSON(&message)
@@ -55,7 +55,7 @@ func contactUs(c *gin.Context) {
 <b>Телефон:</b> %s
 <b>Сообщение:</b> %s`
 
-	msg := tgbotapi.NewMessage(config.TelegramChat, fmt.Sprintf(text, message.Name, message.Email, message.Phone, message.Text))
+	msg := tgbotapi.NewMessage(config.TelegramChat, fmt.Sprintf(text, message.Name, message.Email, message.Phone, message.Message))
 	msg.ParseMode = tgbotapi.ModeHTML
 	tg.Send(msg)
 }
