@@ -23,7 +23,7 @@
                         а продукти від псування. </h6></h2>
 
 
-                    <pricetable></pricetable>
+                    <price-table></price-table>
 
 
                     <v-layout justify-center>

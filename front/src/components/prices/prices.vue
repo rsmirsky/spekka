@@ -18,7 +18,9 @@
                     <v-img :src="require('@/assets/photo6.jpg')" class="content-image"></v-img>
                 </v-flex>
                 <v-flex md8 xs12 mb-4>
-                    <pricetable></pricetable>
+
+                    <price-table></price-table>
+
                     <v-layout justify-center>
                         <v-btn flat color="primary" to="/about">Про нас</v-btn>
                     </v-layout>

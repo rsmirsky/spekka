@@ -1,4 +1,9 @@
 import {Component, Vue} from 'vue-property-decorator';
+import priceTable from "@/extra/price-table/price-table.vue";
+import contactUs from "@/extra/contact-us/contact-us.vue";
+
+Vue.component('price-table', priceTable)
+Vue.component('contact-us', contactUs)
 
 @Component
 export default class HomeComponent extends Vue {

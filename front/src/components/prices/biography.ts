@@ -1,4 +1,7 @@
 import {Component, Vue} from 'vue-property-decorator';
+import priceTable from "@/extra/price-table/price-table.vue";
+
+Vue.component('price-table', priceTable)
 
 @Component
 export default class BiographyComponent extends Vue {

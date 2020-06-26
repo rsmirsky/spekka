@@ -9,13 +9,47 @@
             <v-text-field v-model="message" label="Текст повідомлення" height="200px" box
                           required></v-text-field>
             <v-layout v-if="$vuetify.breakpoint.mdAndUp" justify-end>
-                <v-btn raised color="primary" class="ma-0">надіслати</v-btn>
+                <v-btn raised color="primary" class="ma-0" v-on:click="formSubmit">надіслати</v-btn>
             </v-layout>
             <v-layout v-else justify-center>
-                <v-btn raised color="primary">надіслати</v-btn>
+                <v-btn raised color="primary" v-on:click="formSubmit">надіслати</v-btn>
             </v-layout>
         </v-form>
     </v-flex>
 </template>
 
-<script src="./contact-us.ts"></script>
+<!--<script src="./contact-us.ts"></script>-->
+
+
+<script>
+    import axios from 'axios';
+
+    export default {
+        data() {
+            return {
+                name: '',
+                email: '',
+                phone: '',
+                message: '',
+            };
+        },
+        methods: {
+            formSubmit(e) {
+                e.preventDefault();
+                let currentObj = this;
+                axios.post('/contact-us', {
+                    name: this.name,
+                    email: this.email,
+                    phone: this.phone,
+                    message: this.message
+                })
+                    .then(function (response) {
+                        currentObj.output = response.data;
+                    })
+                    .catch(function (error) {
+                        currentObj.output = error;
+                    });
+            }
+        }
+    }
+</script>
