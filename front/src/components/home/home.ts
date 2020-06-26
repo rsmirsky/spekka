@@ -48,11 +48,6 @@ export default class HomeComponent extends Vue {
     ];
     panel: boolean[] = [true, false, false, false];
 
-    name: string = "";
-    email: string = "";
-    subject: string = "";
-    message: string = "";
-
     getBackground(i: number) {
         if (!this.panel[i]) {
             return "transparent";

@@ -19,4 +19,4 @@
     </div>
 </template>
 
-<script src="./pricetable.ts"></script>
+<script src="./price-table.ts"></script>
