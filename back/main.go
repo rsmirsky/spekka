@@ -23,6 +23,9 @@ func main() {
 
 	// Show static files
 	router.StaticFile("/", "./front/dist/index.html")
+	router.StaticFile("/subscription", "./front/dist/index.html")
+	router.StaticFile("/prices", "./front/dist/index.html")
+	router.StaticFile("/about", "./front/dist/index.html")
 	router.StaticFile("/favicon.ico", "./front/dist/favicon.ico")
 	router.Static("/css", "./front/dist/css")
 	router.Static("/js", "./front/dist/js")
