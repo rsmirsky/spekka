@@ -1,5 +1,16 @@
 <template>
     <v-app>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178255481-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-178255481-1');
+      </script>
+
         <div v-if="$vuetify.breakpoint.mdAndDown">
             <v-toolbar flat fixed scroll-off-screen class="white">
                 <v-layout justify-center>
